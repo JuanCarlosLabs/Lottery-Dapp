@@ -1,0 +1,21 @@
+{
+  "name": "@lottery/frontend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "dotenv": "^16.4.5"
+  }
+}

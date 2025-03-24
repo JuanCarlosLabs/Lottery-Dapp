@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url(https://db.onlinewebfonts.com/c/076abc8ba1bb38a0713dec3b63b880e4?family=Trip+Sans);
+
+:root {
+  --primary-bg: #000000;
+  --primary-text: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: 'Trip Sans', sans-serif;
+}
+
