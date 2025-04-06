@@ -52,7 +52,7 @@ contract Lottery is ReentrancyGuard, VRFConsumerBaseV2Plus {
 
     function buyTicket() external payable nonReentrant {
         console.log("Iniciando compra de boleto por:", msg.sender);
-        //require(_ticketsByOwner[msg.sender] == 0, "Solo se permite 1 boleto por ronda");
+        require(_ticketsByOwner[msg.sender] == 0, "Solo se permite 1 boleto por ronda");
         require(msg.value == TICKET_PRICE, "Precio del boleto incorrecto");
 
         _currentTicketId++;

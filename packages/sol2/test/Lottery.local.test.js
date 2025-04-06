@@ -9,7 +9,7 @@ describe("Lottery Contract (Hardhat Local)", function () {
   before(async function () {
     [owner, addr1, addr2, addr3, addr4, addr5] = await ethers.getSigners();
     Lottery = await ethers.getContractFactory("Lottery");
-    lottery = await Lottery.deploy(owner.address, "0x", 0, 500000);
+    lottery = await Lottery.deploy(owner.address, "0x0000000000000000000000000000000000000000000000000000000000000000", 0, 500000);
     await lottery.waitForDeployment();
   });
 
